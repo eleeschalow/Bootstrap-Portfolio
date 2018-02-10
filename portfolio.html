@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Eric Lee-Schalow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Eric Lee-Schalow</title> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
@@ -13,15 +15,30 @@
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Eric Lee-Schalow</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact Me<span class="sr-only"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
     </div>
   </header>
 
   <div id="main-container" class="container">
+    </- Display Portfolio section in the left 3/4 of the page on Desktop and leave 1/4 on the right for the Side Section, on mobile view display Portfolio section as a full section/12 columns-/>
+    <div class="col- col-m-9 col-9">
     <section class="main-section">
       <h1>Portfolio</h1>
 
@@ -55,6 +72,8 @@
 
     <section class="sidebar">
       <div id="connect">
+        </- Display Side section in the right 1/4 side of the page in Desktop and have it take up all 12 columns or the full section for mobile view-/>
+        <div class="col- col-m3 col-m-3">
         <h2>Connect with Me</h2>
 
         <a href="https://github.com/eleeschalow"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
